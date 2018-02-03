@@ -35,6 +35,7 @@ RUN \
   apk add --no-cache bash && \
   rm -rf /var/cache/apk/* && \
   chmod +x /emojipacks/docker-entrypoint.sh && \
+  npm version "${BUILD_VERSION}" --git-tag-version && \
   npm install --production;
 
 CMD [ \
