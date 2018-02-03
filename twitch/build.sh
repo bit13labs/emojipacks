@@ -2,7 +2,7 @@
 
 # .[] | "  - name: \(.code)\n    src: https://static-cdn.jtvnw.net/emoticons/v1/\(.id)/3.0"
 
-items="$(curl -sL https://twitchemotes.com/api_cache/v3/global.json | jq --compact-output --raw-output '.[] | "  - name: \(.code)\n    src: https://static-cdn.jtvnw.net/emoticons/v1/\(.id)/3.0"')";
+items="$(curl -sL https://twitchemotes.com/api_cache/v3/global.json | jq --compact-output --raw-output '.[] | "  - name: \(.code)\n    src: https://static-cdn.jtvnw.net/emoticons/v1/\(.id)/3.0" | ascii_downcase')";
 base_dir=$(dirname "$0");
 WORKDIR="${WORKSPACE:-"$(pwd)"}";
 

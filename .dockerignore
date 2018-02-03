@@ -1,6 +1,16 @@
 .editorconfig
 .gitignore
 .travis.yml
+.travis.yml
+batchUpload.ps1
+batchUpload.sh
+README.md
 Dockerfile
 Makefile
 *Example.sh
+test/*
+twitch/*
+scripts/*
+npm_modules/*
+.vscode/*
+update_slackmoji/*
