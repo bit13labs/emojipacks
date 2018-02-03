@@ -42,7 +42,7 @@ properties ([
 					withCredentials([[$class: 'StringBinding', credentialsId: env.CI_VAULT_CREDENTIAL_ID, variable: 'VAULT_AUTH_TOKEN']]) {
 						stage ("install" ) {
 								deleteDir()
-								Branch.checkout(this, teamName, "${env.CI_PROJECT_NAME}", gitOrganization)
+								Branch.checkout(this, "${env.CI_PROJECT_NAME}", gitOrganization)
 								Pipeline.install(this)
 						}
 						stage ("lint") {
