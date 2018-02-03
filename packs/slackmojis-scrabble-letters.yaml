@@ -1,9 +1,11 @@
-title: scrabble
+title: slackmoji-scrabble-letters
 emojis:
   - name: scrabble-a
     src: http://emojis.slackmojis.com/emojis/images/1481250592/1443/a.jpg
   - name: scrabble-b
     src: http://emojis.slackmojis.com/emojis/images/1481250615/1444/b.jpg
+  - name: scrabble-blank
+    src: http://emojis.slackmojis.com/emojis/images/1481251189/1469/blank.jpg
   - name: scrabble-c
     src: http://emojis.slackmojis.com/emojis/images/1481250615/1445/c.jpg
   - name: scrabble-d
@@ -52,5 +54,3 @@ emojis:
     src: http://emojis.slackmojis.com/emojis/images/1481250754/1467/y.jpg
   - name: scrabble-z
     src: http://emojis.slackmojis.com/emojis/images/1481251057/1468/z.jpg
-  - name: scrabble-blank
-    src: http://emojis.slackmojis.com/emojis/images/1481251189/1469/blank.jpg
