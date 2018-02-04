@@ -19,7 +19,9 @@ properties ([
 			]
 		]
 	],
-	cron(env.BRANCH_NAME ==~ /develop$/ ? "@monthly" : "")
+	pipelineTriggers([
+		cron(env.BRANCH_NAME ==~ /develop$/ ? "@monthly" : "")
+	])
 ])
 
 
