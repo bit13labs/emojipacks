@@ -32,10 +32,10 @@ get_opts "$@";
 FORCE_DEPLOY=${opt_force:-0};
 BUILD_PROJECT="${opt_name:-"${CI_PROJECT_NAME}"}";
 BUILD_PUSH_REGISTRY="${DOCKER_REGISTRY}";
-BUILD_VERSION="${opt_version:-"${CI_BUILD_VERSION:-"1.0.0-snapshot"}"}";
+BUILD_VERSION="${opt_version:-"${CI_BUILD_VERSION:-"latest"}"}";
 BUILD_ORG="${opt_org}";
 
-DOCKER_IMAGE="${BUILD_ORG}/${INSTANCE_NAME}:${TAG_VERSION}";
+DOCKER_IMAGE="${BUILD_ORG}/${BUILD_PROJECT}:${BUILD_VERSION}";
 
 [[ -z "${BUILD_PROJECT// }" ]] && __error "Environment variable 'CI_PROJECT_NAME' missing or empty.";
 [[ -z "${BUILD_VERSION// }" ]] && __error "Environment variable 'CI_BUILD_VERSION' missing or empty.";
