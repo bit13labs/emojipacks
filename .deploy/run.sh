@@ -73,6 +73,5 @@ fi
 docker run -d \
 	--user 0 \
 	--rm \
-	--restart never \
 	--name "${BUILD_PROJECT}" \
 	-t "${DOCKER_IMAGE}";
