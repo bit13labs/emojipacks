@@ -32,7 +32,7 @@ COPY . /emojipacks/
 WORKDIR /emojipacks
 
 RUN \
-  apk add --no-cache bash && \
+  apk add --no-cache bash curl jq && \
   rm -rf /var/cache/apk/* && \
   chmod +x /emojipacks/docker-entrypoint.sh && \
   npm version "${BUILD_VERSION}" --git-tag-version && \

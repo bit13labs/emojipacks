@@ -9,7 +9,6 @@ Dockerfile
 Makefile
 *Example.sh
 test/*
-twitch/*
 scripts/*
 npm_modules/*
 .vscode/*

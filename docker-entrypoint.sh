@@ -27,8 +27,25 @@ PACKS_PATH="${SLACK_PACKS_PATH:-"./packs"}";
 
 
 for file in $PACKS_PATH/*.yaml; do
-  echo "$file";
-  ./bin/emojipacks -s "$SLACK_SUBDOMAIN" -e "$SLACK_USER_EMAIL" -p "$SLACK_USER_PASSWORD" -y "$file";
+	if [ -f $file ]; then
+		(>&2 echo "Processing $file...");
+		/emojipacks/bin/emojipacks -s "$SLACK_SUBDOMAIN" -e "$SLACK_USER_EMAIL" -p "$SLACK_USER_PASSWORD" -y "$file";
+	else
+		(>&2 echo "$file not found");
+	fi
 done
+
+bash /emojipacks/twitch/build.sh;
+
+PACKS_PATH="/emojipacks/twitch/packs";
+for file in ${PACKS_PATH}/*.yaml; do
+	if [ -f $file ]; then
+		(>&2 echo "Processing $file...");
+		/emojipacks/bin/emojipacks -s "$SLACK_SUBDOMAIN" -e "$SLACK_USER_EMAIL" -p "$SLACK_USER_PASSWORD" -y "$file";
+	else
+		(>&2 echo "$file not found");
+	fi
+done
+rm -rf /emojipacks/twitch/packs
 
 unset PACKS_PATH;
