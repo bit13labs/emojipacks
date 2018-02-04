@@ -14,5 +14,3 @@ scripts/*
 npm_modules/*
 .vscode/*
 update_slackmoji/*
-packs/*
-!packs/bit13.yaml
