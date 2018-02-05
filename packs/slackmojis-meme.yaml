@@ -36,9 +36,9 @@ emojis:
     src: http://emojis.slackmojis.com/emojis/images/1463602545/441/door_stop.png
   - name: epic_win
     src: http://emojis.slackmojis.com/emojis/images/1463602516/440/epic_win.png
-  - name: facepalm
-    src: http://emojis.slackmojis.com/emojis/images/1450473045/204/facepalm.gif
   - name: facepalm3
+    src: http://emojis.slackmojis.com/emojis/images/1450473045/204/facepalm.gif
+  - name: facepalm
     src: http://emojis.slackmojis.com/emojis/images/1450319441/51/facepalm.png
   - name: feels
     src: http://emojis.slackmojis.com/emojis/images/1454927900/294/feels.png

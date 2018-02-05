@@ -1312,12 +1312,8 @@ emojis:
     src: http://emojis.slackmojis.com/emojis/images/1466642474/541/hungover.gif
   - name: hungry
     src: http://emojis.slackmojis.com/emojis/images/1492445235/2042/hungry.jpg
-  - name: hyoe
-    src: http://emojis.slackmojis.com/emojis/images/1496828936/2380/hyoe.jpg
   - name: hype
     src: http://emojis.slackmojis.com/emojis/images/1496828954/2381/hype.jpg
-  - name: hypnotoad2
-    src: http://emojis.slackmojis.com/emojis/images/1467907796/644/hypnotoad.gif
   - name: hyttioaoa
     src: http://emojis.slackmojis.com/emojis/images/1481218734/1440/hyttioaoa.gif
   - name: ibm_5150
@@ -3043,8 +3039,6 @@ emojis:
   - name: what_is_life
     src: http://emojis.slackmojis.com/emojis/images/1490988037/1983/what_is_life.gif
   - name: wheatley
-    src: http://emojis.slackmojis.com/emojis/images/1470849552/748/wheatley.gif
-  - name: wheatley_fixed_
     src: http://emojis.slackmojis.com/emojis/images/1501342855/2719/wheatley_fixed_.gif
   - name: whip
     src: http://emojis.slackmojis.com/emojis/images/1493341149/2141/whip.gif
