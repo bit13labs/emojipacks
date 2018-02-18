@@ -19,6 +19,7 @@ __info() {
 
 
 PACKS_PATH="${SLACK_PACKS_PATH:-"./packs"}";
+# FILE_PATTERN="*.yaml";
 
 [[ -z "${SLACK_SUBDOMAIN// }" ]] && __error "Environment variable 'SLACK_SUBDOMAIN' missing or empty.";
 [[ -z "${SLACK_USER_EMAIL// }" ]] && __error "Environment variable 'SLACK_USER_EMAIL' missing or empty.";
@@ -26,8 +27,8 @@ PACKS_PATH="${SLACK_PACKS_PATH:-"./packs"}";
 [[ -z "${PACKS_PATH// }" ]] && __error "Environment variable 'SLACK_PACKS_PATH' missing or empty.";
 
 
-for file in $PACKS_PATH/*.yaml; do
-	if [ -f $file ]; then
+for file in $PACKS_PATH/twitch-*.yaml; do
+	if [ -f "$file" ]; then
 		(>&2 echo "Processing $file...");
 		/emojipacks/bin/emojipacks -s "$SLACK_SUBDOMAIN" -e "$SLACK_USER_EMAIL" -p "$SLACK_USER_PASSWORD" -y "$file";
 	else
@@ -38,8 +39,8 @@ done
 bash /emojipacks/twitch/build.sh;
 
 PACKS_PATH="/emojipacks/twitch/packs";
-for file in ${PACKS_PATH}/*.yaml; do
-	if [ -f $file ]; then
+for file in ${PACKS_PATH}/twitch-*.yaml; do
+	if [ -f "$file" ]; then
 		(>&2 echo "Processing $file...");
 		/emojipacks/bin/emojipacks -s "$SLACK_SUBDOMAIN" -e "$SLACK_USER_EMAIL" -p "$SLACK_USER_PASSWORD" -y "$file";
 	else
