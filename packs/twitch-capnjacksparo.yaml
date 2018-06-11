@@ -36,3 +36,23 @@ emojis:
     src: https://static-cdn.jtvnw.net/badges/v1/7b6aca00-7259-49bd-91f5-373e81b85a3b/3
   - name: sparoSub12
     src: https://static-cdn.jtvnw.net/badges/v1/15a56954-b10e-49a2-b18e-b537c902be8c/3
+  - name: sparoMSG
+    src: https://static-cdn.jtvnw.net/emoticons/v1/950798/2.0
+  - name: sparoArt
+    src: https://static-cdn.jtvnw.net/emoticons/v1/990313/2.0
+  - name: sparoCSB
+    src: https://static-cdn.jtvnw.net/emoticons/v1/950794/2.0
+  - name: sparoCheers
+    src: https://static-cdn.jtvnw.net/emoticons/v1/950789/2.0
+  - name: sparoGG
+    src: https://static-cdn.jtvnw.net/emoticons/v1/990309/2.0
+  - name: sparoNoob
+    src: https://static-cdn.jtvnw.net/emoticons/v1/990308/2.0
+  - name: sparoWrath
+    src: https://static-cdn.jtvnw.net/emoticons/v1/950792/2.0
+  - name: sparoWut
+    src: https://static-cdn.jtvnw.net/emoticons/v1/990305/2.0
+  - name: sparoHip
+    src: https://static-cdn.jtvnw.net/emoticons/v1/990304/2.0
+  - name: sparoGod
+    src: https://static-cdn.jtvnw.net/emoticons/v1/950815/2.0

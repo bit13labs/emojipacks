@@ -74,4 +74,4 @@ docker run -d \
 	--user 0 \
 	--rm \
 	--name "${BUILD_PROJECT}" \
-	-t "${DOCKER_IMAGE}";
+	-t "${DOCKER_REGISTRY}/${DOCKER_IMAGE}";
