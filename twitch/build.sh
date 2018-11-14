@@ -25,7 +25,8 @@ echo -e "{}]\n}" >> "${twitch_file}.json";
 $(npm bin)/json2yaml "${twitch_file}.json" > "${twitch_file}.yaml";
 rm "${twitch_file}.json";
 sed -i 's|- {}||g' "${twitch_file}.yaml";
-mv "${twitch_file}.yaml" "${packs_dir}/$(basename "${twitch_file}.yaml")"
+mv "${twitch_file}.yaml" "${packs_dir}/$(basename "${twitch_file}.yaml")";
+cat "${packs_dir}/$(basename "${twitch_file}.yaml")";
 
 # THIS TAKES A REALLY LONG TIME BECAUSE THIS FILE IS SO LARGE
 # (>&2 echo "Downloading Subscriber Emotes data cache...");
